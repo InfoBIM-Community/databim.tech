@@ -36,7 +36,23 @@ const built = buildLocalWheels(manifest);
 // The committed local wheels are pinned by sha256 in the manifest; the built ones, by the hash of their source.
 const stamp = sha256(manifestText + JSON.stringify([...built].map(([name, { hash }]) => [name, hash])));
 
-if (existsSync(STAMP) && readFileSync(STAMP, 'utf8') === stamp) {
+/**
+ * The stamp only says what was vendored, not that it is still there: a cleaned
+ * public directory leaves it behind, so trusting it alone answers URLs of
+ * missing wheels with the index page and the browser fails on a bad zip.
+ */
+function vendored() {
+  try {
+    const wheels = JSON.parse(readFileSync(join(OUT, 'wheels.json'), 'utf8'));
+    const runtime = readdirSync(join(OUT, 'pyodide'));
+    return runtime.some((file) => file.endsWith('.wasm'))
+      && wheels.every((file) => existsSync(join(OUT, 'wheels', file)));
+  } catch {
+    return false;
+  }
+}
+
+if (existsSync(STAMP) && readFileSync(STAMP, 'utf8') === stamp && vendored()) {
   console.log('[python] runtime already vendored');
   process.exit(0);
 }

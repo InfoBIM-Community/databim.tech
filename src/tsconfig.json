@@ -12,5 +12,5 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["infobim/**/*.ts", "plugin/**/*.ts", "vite.config.ts"]
+  "include": ["ontobdc/**/*.ts", "plugin/**/*.ts", "addon/**/*.ts", "vite.config.ts"]
 }

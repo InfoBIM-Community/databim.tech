@@ -1,0 +1,17 @@
+scope: ddock
+python:
+  dep:
+  - name: infobim
+    version: 0.15.2
+override:
+  command: org.infobim
+source:
+  main:
+    local: src
+    remote: https://github.com/OntoBDC/ontobdc-ddock
+  package:
+    - https://github.com/EliasMPJunior/ontobdc-ddock-addon/annotation
+    - https://github.com/EliasMPJunior/ontobdc-ddock-addon/productivity
+#    - https://github.com/InfoBIM-Community/databim.tech/org.infobim
+    - ./org.infobim
+

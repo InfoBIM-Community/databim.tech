@@ -3,10 +3,13 @@ __pycache__/
 *.py[codz]
 *$py.class
 .DS_Store
+.ddock-install/
+src/
 
 # C extensions
 *.so
 
+src/
 # Distribution / packaging
 .Python
 build/

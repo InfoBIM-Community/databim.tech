@@ -34,6 +34,8 @@
   --hover-overlay: rgba(255,255,255,0.08);
   --focus-overlay: rgba(255,255,255,0.12);
   --brand: #008bd2;
+  /* The blue of the logo, for the BDC of the name. */
+  --brand-logo: #00c8e8;
   --status-error: #f14c4c;
   --status-success: #3fb950;
   --status-warning: #d29922;
@@ -83,6 +85,7 @@
   --hover-overlay: rgba(0,0,0,0.05);
   --focus-overlay: rgba(0,0,0,0.08);
   --brand: #0079b8;
+  --brand-logo: #0099b8;
   --status-error: #c62828;
   --status-success: #238636;
   --status-warning: #8a6400;
