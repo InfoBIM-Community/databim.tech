@@ -1,0 +1,9 @@
+/* The panel of an IFC model: the 3D view fills it, and the status of loading or of an error floats over it. */
+@layer common {
+  .ifc-panel { position: relative; overflow: hidden; background: var(--surface); }
+  .ifc-panel canvas { display: block; width: 100%; height: 100%; }
+  .ifc-panel .file-status { position: absolute; top: 0; left: 0; z-index: 1; color: var(--text-secondary); }
+  /* Reads the file again; over the view, at its top right, as the buttons of an entity are over its tab. */
+  .ifc-panel .ifc-reload { position: absolute; top: 8px; right: 8px; z-index: 2; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 4px; background: transparent; color: var(--text); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+  .ifc-panel .ifc-reload:hover, .ifc-panel .ifc-reload:focus-visible { background: var(--surface-hover); color: var(--text-strong); outline: none; }
+}

@@ -1,0 +1,23 @@
+import type { en } from './en';
+
+export default {
+  'drawing.loading': 'Cargando el dibujo…',
+  'drawing.error': 'No se pudo abrir el dibujo: {message}',
+  'drawing.layers': 'Capas',
+  'drawing.dwgUnsupported': 'Los archivos DWG no se pueden abrir en el navegador. Convierte el archivo a DXF para verlo.',
+  'ifc.element.selected': 'Seleccionado {type}: «{name}» (GlobalId {globalId}, ExpressID {expressID}) en {file}.',
+  'ifc.element.unnamed': 'sin nombre',
+  'ifc.element.inspectFailed': 'No se pudo inspeccionar el elemento: {message}',
+  'ifc.element.noGlobalId': 'El elemento no tiene GlobalId, así que no se puede inspeccionar.',
+  'org_infobim.modeling.button': 'Consultar un término de modelado',
+  'org_infobim.modeling.placeholder': 'Término, como IfcWall…',
+  'org_infobim.modeling.send': 'Consultar',
+  'modeling.facade': '{name} (entidad {iri}).\nCampos: {fields}.',
+  'modeling.definition': '{name}, una clase de IFC4 ({iri}).',
+  'modeling.superclasses': 'Tipo de: {list}.',
+  'modeling.subclasses': 'Subclases: {list}.',
+  'modeling.attributes': 'Atributos: {list}.',
+  'modeling.types': 'Tipos predefinidos: {list}.',
+  'modeling.none': 'ninguna',
+  'modeling.failed': 'No se pudo consultar «{term}»: {message}',
+} satisfies Record<keyof typeof en, string>;

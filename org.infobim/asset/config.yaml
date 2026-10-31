@@ -1,0 +1,10 @@
+
+metadata:
+  name: InfoBIM
+  brand: 
+    plain: Info
+    colored: BIM
+    color: "#008bd2"
+  version: 0.0.1
+  description: A web application for managing BIM projects.
+
