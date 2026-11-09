@@ -20,4 +20,13 @@ export default {
   'modeling.types': 'Tipos predefinidos: {list}.',
   'modeling.none': 'nenhuma',
   'modeling.failed': 'Não foi possível consultar “{term}”: {message}',
+  'nav.data_environment': 'Ambiente de Dados',
+  'pane.data_environment.header': 'AMBIENTE DE DADOS',
+  'data_environment.group.models': 'Modelos',
+  'data_environment.group.drawings': 'Desenhos',
+  'data_environment.group.disciplines': 'Disciplinas',
+  'data_environment.group.federated': 'Federado',
+  'data_environment.models.empty': 'Nenhum modelo encontrado',
+  'data_environment.drawings.empty': 'Nenhum desenho encontrado',
+  'data_environment.soon': 'Nada por aqui ainda',
 } satisfies Record<keyof typeof en, string>;

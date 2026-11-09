@@ -23,6 +23,15 @@ export const en = {
   'modeling.types': 'Predefined types: {list}.',
   'modeling.none': 'none',
   'modeling.failed': 'Could not look up “{term}”: {message}',
+  'nav.data_environment': 'Data Environment',
+  'pane.data_environment.header': 'DATA ENVIRONMENT',
+  'data_environment.group.models': 'Models',
+  'data_environment.group.drawings': 'Drawings',
+  'data_environment.group.disciplines': 'Disciplines',
+  'data_environment.group.federated': 'Federated',
+  'data_environment.models.empty': 'No models found',
+  'data_environment.drawings.empty': 'No drawings found',
+  'data_environment.soon': 'Nothing here yet',
 };
 
 declare module '@/ontobdc/shared/plugin/i18n' {

@@ -20,4 +20,13 @@ export default {
   'modeling.types': 'Tipos predefinidos: {list}.',
   'modeling.none': 'ninguna',
   'modeling.failed': 'No se pudo consultar «{term}»: {message}',
+  'nav.data_environment': 'Entorno de Datos',
+  'pane.data_environment.header': 'ENTORNO DE DATOS',
+  'data_environment.group.models': 'Modelos',
+  'data_environment.group.drawings': 'Planos',
+  'data_environment.group.disciplines': 'Disciplinas',
+  'data_environment.group.federated': 'Federado',
+  'data_environment.models.empty': 'No se encontraron modelos',
+  'data_environment.drawings.empty': 'No se encontraron planos',
+  'data_environment.soon': 'Nada por aquí todavía',
 } satisfies Record<keyof typeof en, string>;

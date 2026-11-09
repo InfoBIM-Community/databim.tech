@@ -1,9 +1,14 @@
 import '@/ontobdc/shared/domain/model/event';
+import type { ExplorerNode } from '@/ontobdc/shared/domain/model/explorer-node';
 import type { IfcElementInfo } from '@/addon/org.infobim/domain/model/ifc-mesh';
 import type { IfcAxis, IfcProjection } from '@/addon/org.infobim/domain/model/ifc-view';
 
 declare module '@/ontobdc/shared/domain/model/event' {
   interface AppEventMap {
+    /** The models (IFC) of the container, as the inspection of the project found them, for the Data Environment to show: a tree of folders and files, paths from the root of the container. */
+    'presentation.data_environment.models.found': { nodes: ExplorerNode[] };
+    /** The drawings (DXF and DWG) of the container, as the inspection of the project found them, for the Data Environment to show. */
+    'presentation.data_environment.drawings.found': { nodes: ExplorerNode[] };
     /** The tab of a DXF drawing was closed; item is the path of the file in the container. */
     'presentation.main.dxf.closed': { item: string };
     /** The tab of a DWG drawing was closed; item is the path of the file in the container. */

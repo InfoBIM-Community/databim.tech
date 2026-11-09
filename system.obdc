@@ -5,13 +5,20 @@ python:
     version: 0.15.2
 override:
   command: org.infobim
+# The entities a field takes, narrowed: by the identifier of the facade and then of the field, with the names of the
+# entities it takes. What is not named takes any entity. Copied to asset/config.yaml, and from there into the config
+# of the container by the refresh.
+constraint:
+  5w2h:
+    what:
+      accepts:
+        - goal
 source:
   main:
     local: src
     remote: https://github.com/OntoBDC/ontobdc-ddock
   package:
-    - https://github.com/EliasMPJunior/ontobdc-ddock-addon/annotation
-    - https://github.com/EliasMPJunior/ontobdc-ddock-addon/productivity
-#    - https://github.com/InfoBIM-Community/databim.tech/org.infobim
+    - https://github.com/OntoBDC/ontobdc-ddock-addon/annotation
+#    - https://github.com/OntoBDC/ontobdc-ddock-addon/productivity
     - ./org.infobim
 
