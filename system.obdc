@@ -19,6 +19,5 @@ source:
     remote: https://github.com/OntoBDC/ontobdc-ddock
   package:
     - https://github.com/OntoBDC/ontobdc-ddock-addon/annotation
-#    - https://github.com/OntoBDC/ontobdc-ddock-addon/productivity
     - ./org.infobim
 
