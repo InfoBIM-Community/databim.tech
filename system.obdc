@@ -12,6 +12,19 @@ override:
 # The entities a field takes, narrowed: by the identifier of the facade and then of the field, with the names of the
 # entities it takes. What is not named takes any entity. Copied to asset/config.yaml, and from there into the config
 # of the container by the refresh.
+server:
+  # The addresses the application talks to. Read through the config adapter.
+  # The server of Brasidata the person logs in to.
+  url: http://localhost:8000
+  # The page where the person logs in; it sends the authorization code back to the application.
+  login: http://localhost:8000/login
+  # Where the authorization code is exchanged for the access token.
+  token: http://localhost:8000/token
+  # Where the profile of the person who logged in is read, with the access token.
+  profile: http://localhost:8000/profile
+  # The containers of the server; the list is asked with the parameter list=true.
+  containers: http://localhost:8000/cmd/ontobdc/container
+
 constraint:
   5w2h:
     what:
