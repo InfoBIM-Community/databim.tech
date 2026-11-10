@@ -1,8 +1,12 @@
 scope: ddock
 python:
   dep:
+  - name: brasidatacenter
+    version: 0.16.0
+  - name: ontobdc
+    version: 0.27.0
   - name: infobim
-    version: 0.15.2
+    version: 0.16.0
 override:
   command: org.infobim
 # The entities a field takes, narrowed: by the identifier of the facade and then of the field, with the names of the
@@ -19,5 +23,6 @@ source:
     remote: https://github.com/OntoBDC/ontobdc-ddock
   package:
     - https://github.com/OntoBDC/ontobdc-ddock-addon/annotation
+#    - https://github.com/OntoBDC/ontobdc-ddock-addon/productivity
     - ./org.infobim
 
