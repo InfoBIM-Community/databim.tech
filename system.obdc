@@ -22,14 +22,11 @@ server:
   token: http://localhost:8000/token
   # Where the profile of the person who logged in is read, with the access token.
   profile: http://localhost:8000/profile
+  # The page of the account of the person who logged in, opened from the status bar.
+  account: http://localhost:8000/admin/
   # The containers of the server; the list is asked with the parameter list=true.
   containers: http://localhost:8000/cmd/ontobdc/container
 
-constraint:
-  5w2h:
-    what:
-      accepts:
-        - goal
 source:
   main:
     local: src
